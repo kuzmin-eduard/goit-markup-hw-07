@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -409,7 +409,7 @@
       <div class="footer-form">
         <h3 class="footer-form__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
         <form class="footer-form__mail">
-          <label class="footer-label">
+          <label class="footer-form__label">
             <input type="email" name="email" placeholder="E-mail">
           </label>
           <button class="footer-button" type="submit">Підписатися
@@ -425,55 +425,55 @@
   </footer>
 
   <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
+    <div class="backdrop__modal">
       <button data-modal-close type="button" class="close-modal">
         <svg class="icon close-modal__icon-close" width="18px" height="18px">
           <use xlink:href="./images/close.svg#icon-close"></use>
         </svg>
       </button>
-      <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+      <p class="backdrop__modal-title">Залиште свої дані, ми вам передзвонимо</p>
       <form>
         <div class="modal-group">
-          <label class="modal-group-text">Ім'я</label>
-          <div class="modal-group-wrap">
+          <label class="modal-group__text">Ім'я</label>
+          <div class="modal-group__wrap">
             <input type="text" name="name" id="name">
-            <svg class="icon icon-person" width="18px" height="18px">
+            <svg class="icon modal-group__modal-icon" width="18px" height="18px">
               <use xlink:href="./images/modal.svg#icon-person"></use>
             </svg>
           </div>
         </div>
         <div class="modal-group">
-          <label class="modal-group-text">Телефон</label>
-          <div class="modal-group-wrap">
+          <label class="modal-group__text">Телефон</label>
+          <div class="modal-group__wrap">
             <input type="text" name="phone" id="phone">
-            <svg class="icon icon-phone-black" width="18px" height="18px">
+            <svg class="icon modal-group__modal-icon" width="18px" height="18px">
               <use xlink:href="./images/modal.svg#icon-phone-black"></use>
             </svg>
           </div>
         </div>
         <div class="modal-group">
-          <label class="modal-group-text">Пошта</label>
-          <div class="modal-group-wrap">
+          <label class="modal-group__text">Пошта</label>
+          <div class="modal-group__wrap">
             <input type="text" name="mail" id="mail">
-            <svg class="icon icon-email-black" width="18px" height="18px">
+            <svg class="icon modal-group__modal-icon" width="18px" height="18px">
               <use xlink:href="./images/modal.svg#icon-email-black"></use>
             </svg>
           </div>
         </div>
-        <div class="coment">
-          <label class="modal-group-text">Коментар</label>
-          <textarea class="modal-textarea" name="coment" id="coment" placeholder="Введіть текст"></textarea>
+        <div class="modal-group__coment">
+          <label class="modal-group__text">Коментар</label>
+          <textarea class="modal-group__textarea" name="coment" id="coment" placeholder="Введіть текст"></textarea>
         </div>
-        <div>
-          <label class="modal-checkbox">
-            <input class="checkbox-input" type="checkbox" name="chekbox">
-            <span class="checkbox-icon"></span>
+        <div class="checkbox">
+          <label>
+            <input class="checkbox__input" type="checkbox" name="chekbox">
+            <span class="checkbox__icon"></span>
             Погоджуюся з розсилкою та приймаю
-            <a class="checkbox-link" href="">Умови договору</a>
+            <a class="checkbox__link" href="">Умови договору</a>
           </label>
         </div>
-        <div class="wrap-button">
-          <button class="forma-button" type="submit">Відправити</button>
+        <div class="checkbox__button">
+          <button class="checkbox__button-forma" type="submit">Відправити</button>
         </div>
       </form>
     </div>
