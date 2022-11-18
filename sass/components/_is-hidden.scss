@@ -2,4 +2,7 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    .backdrop__modal{
+      transform: translate(-50%, -50%) scale(1.3);
+    }
   }
